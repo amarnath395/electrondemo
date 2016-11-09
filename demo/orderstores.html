@@ -1,0 +1,26 @@
+<div ng-controller="orderstoresController">
+	<div class="row rmenu">
+		<div class="col-xs-3"><i class="fa fa-plus iconspace" aria-hidden="true"></i>New Order</div>
+		<div class="col-xs-3"><i class="fa fa-check-square-o iconspace" aria-hidden="true"></i>Save for later</div>
+		<div class="col-xs-3"><i class="fa fa-trash iconspace" aria-hidden="true"></i>Delete Order</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="row rmainheader">
+				<div class="col-xs-3"><span class="badge">1</span>Program</div>
+				<div class="col-xs-3"><span class="badge">2</span>Stores</div>
+				<div class="col-xs-3"><span class="badge">3</span>Products</div>
+				<div class="col-xs-3"><span class="badge">4</span>OrderInfo</div>
+			</div>
+			<div class="row rmainheader1">
+				<input type="text" ng-model="countryName" typeahead="item.name for item in countries | filter:$viewValue | limitTo:8" class="form-control" >
+			</div>
+			<div class="row rmainheader">
+				<div><a class="btn btn-default pull-right" href="index.html#/">Next</a></div>
+				<div><a class="btn btn-default pull-right" href="index.html#/">Back</a></div>
+			</div>
+		</div>
+	</div>
+
+</div>

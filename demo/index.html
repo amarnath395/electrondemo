@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Scotts ROE</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+	    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	    <link rel="stylesheet" href="style.css" />
+	    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
+    	<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
+	</head>
+	<body ng-app="demoapp">
+		
+		<div>
+			<ul class="nav nav-tabs">
+			  <li role="presentation" class="active"><a href="#"><i class="fa fa-shopping-cart iconspace" aria-hidden="true"></i>Orders</a></li>
+			  <li role="presentation"><a href="#"><i class="fa fa-history iconspace" aria-hidden="true"></i>Sales history</a></li>
+			  <li role="presentation"><a href="#"><i class="fa fa-address-card iconspace" aria-hidden="true"></i>Forms</a></li>
+			  <li role="presentation"><a href="#"><i class="fa fa-user iconspace" aria-hidden="true"></i>User setup</a></li>
+			</ul>
+		</div>
+		<div ng-view></div>		
+
+		<script src="app.js"></script>
+
+	</body>
+</html>

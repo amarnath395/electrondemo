@@ -1,0 +1,50 @@
+<div>
+	<div class="row rmenu">
+		<div class="col-xs-3"><i class="fa fa-plus iconspace" aria-hidden="true"></i>New Order</div>
+		<div class="col-xs-3"><i class="fa fa-check-square-o iconspace" aria-hidden="true"></i>Save for later</div>
+		<div class="col-xs-3"><i class="fa fa-trash iconspace" aria-hidden="true"></i>Delete Order</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="row rmainheader">
+				<div class="col-xs-3"><span class="badge">1</span>Program</div>
+				<div class="col-xs-3"><span class="badge">2</span>Stores</div>
+				<div class="col-xs-3"><span class="badge">3</span>Products</div>
+				<div class="col-xs-3"><span class="badge">4</span>OrderInfo</div>
+			</div>
+			<article class="row rmainheader">
+			<div class="row">
+				<div class="col-xs-3">Season</div>
+				<div class="col-xs-3">Order Type</div>
+				<div class="col-xs-3">Preparation</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3"><input type="radio" name="options1" checked>Annual</div>
+				<div class="col-xs-3"><input type="radio" name="options2">Growing Media</div>
+				<div class="col-xs-6"><span>Prepared by</span>
+					<div class="btn-group" dropdown is-open="status.isopen">
+				      <button type="button" class="btn btn-default dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+				        Button dropdown <span class="caret"></span>
+				      </button>
+				      <ul class="dropdown-menu" role="menu">
+				        <li ng-repeat="choice in items">
+				          <a href="#">{{choice}}</a>
+				        </li>
+				      </ul>
+				    </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3"><input type="radio" name="options1">Standard</div>
+				<div class="col-xs-3"><input type="radio" name="options2" checked>mixing Warehouse</div>
+				<div class="col-xs-3">Copy ASM</div>
+			</div>
+			<div class="row">
+				<div><a class="btn btn-default pull-right" href="index.html#/stores">Next</a></div>
+			</div>
+			</article>
+		</div>
+	</div>
+
+</div>
