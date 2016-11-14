@@ -1,0 +1,47 @@
+ <div>
+ <div class="row menu-bg">
+        <div class="column ">           
+            <div class="ui menu no-margin">
+              <a class="item"><i class="suitcase icon"></i>Order management</a>
+              <a class="item"><i class="plus icon"></i>New order</a>
+              <a class="item"><i class="edit icon"></i>Edit order</a>
+              <a class="item"><i class="trash outline icon"></i>Delete order</a>
+            </div>
+        </div>
+    </div>
+ <div class="ui page grid">
+    
+    <div class="row">
+        <table class="ui selectable celled table"  *ngIf='products && products.length'>
+          <thead>
+            <tr>
+              <th>Program</th>
+              <th>Payer</th>
+              <th>PO number</th>
+              <th>Status</th>
+              <th>Total</th>
+              <th>COOP</th>
+              <th>SAP</th>
+              <th>Store name</th>
+              <th>City</th>
+              <th>State</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let product of products'>
+              <th>{{product.program}}</th>
+              <th>{{product.payer}}</th>
+              <th>{{product.ponumber}}</th>
+              <th>{{product.status}}</th>
+              <th>{{product.total}}</th>
+              <th>{{product.coop}}</th>
+              <th>{{product.sap}}</th>
+              <th>{{product.storename}}</th>
+              <th>{{product.city}}</th>
+              <th>{{product.state}}</th>
+            </tr>                
+          </tbody>
+        </table>
+    </div>
+</div>
+ </div>

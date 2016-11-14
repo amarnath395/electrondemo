@@ -1,0 +1,47 @@
+body { 
+    min-height:100%;
+}
+
+.app-bg{
+	background-color: #009933; 	
+}
+
+.menu-bg{
+	background-color: #FFFFFF; 	
+}
+
+.container-bg{
+	background-color: #ddd; 	
+}
+
+.no-margin{
+	margin: 0 0;
+}
+
+.no-border{
+	border : none;
+}
+
+tbody > tr > th {
+	padding : 10px 10px;
+}
+
+.margin-top-box{
+	margin-top: 20px;
+}
+
+.icon-space{
+	padding-right: 5px !important;
+}
+
+.footer-nav{
+	position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding : 10px;   
+}
+
+.right{
+	 float: right;
+}

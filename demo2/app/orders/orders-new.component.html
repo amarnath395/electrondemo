@@ -1,0 +1,87 @@
+<div>
+  <div class="row menu-bg">
+      <div class="column ">           
+          <div class="ui menu no-margin">
+            <a class="item"><i class="suitcase icon"></i>Order management</a>
+            <a class="item"><i class="plus icon"></i>New order</a>
+            <a class="item"><i class="edit icon"></i>Edit order</a>
+            <a class="item"><i class="trash outline icon"></i>Delete order</a>
+          </div>
+      </div>
+  </div>
+ <div class="ui page grid">
+    <div class="row menu-bg margin-top-box">
+                 
+          <div class="ui five column grid no-margin">
+            <a class="column"><i class="ui blue circular label icon-space">1</i>Program</a>
+            <a class="column"><i class="ui grey circular label icon-space">2</i>Stores</a>
+            <a class="column"><i class="ui grey circular label icon-space">3</i>Products</a>
+            <a class="column"><i class="ui grey circular label icon-space">4</i>Order info</a>
+          </div>
+     
+    </div>
+    
+    <div class="row">
+        <table class="ui table"  *ngIf='products && products.length'>
+          
+          <tbody>
+            <tr>
+              <th>Season</th>
+             <th>Order type</th>
+             <th>Preparation</th>
+            </tr>
+            <tr>
+              <th>
+                <div class="ui radio checkbox">
+                  <input type="radio" name="radio1" checked="checked">
+                  <label>Annual</label>
+                </div>
+              </th>
+             <th>
+               <div class="ui radio checkbox">
+                  <input type="radio" name="radio2" checked="checked">
+                  <label>Growing media</label>
+                </div>
+             </th>
+             <th>
+             <label>Prepared by</label>
+               <select class="ui search dropdown">
+                <option value="">State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>                
+              </select>
+
+             </th>
+            </tr>
+            <tr>              
+              <th>
+                <div class="ui radio checkbox">
+                  <input type="radio" name="radio1" checked="checked">
+                  <label>Standard</label>
+                </div>
+              </th>
+              <th>
+                <div class="ui radio checkbox">
+                  <input type="radio" name="radio2" checked="checked">
+                  <label>Mixing Warehouse</label>
+                </div>
+              </th>
+             <th>
+             <label>Copy ASM</label>
+               <div class="ui checkbox">               
+                <input type="checkbox" name="example">
+                <label></label>
+              </div>
+             </th>
+            </tr>                 
+          </tbody>
+        </table>
+    </div>
+</div>
+<div class="row menu-bg footer-nav">
+      <div class="ui buttons right"> 
+          <div class="ui blue button">Next</div>
+      </div>
+  </div>
+ </div>
