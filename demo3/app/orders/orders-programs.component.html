@@ -1,0 +1,84 @@
+<div>
+    <div class="row rmenu">
+        <div class="col-xs-auto"><i class="fa fa-plus iconspace" aria-hidden="true"></i>New Order</div>
+		<div class="col-xs-auto"><i class="fa fa-check-square-o iconspace" aria-hidden="true"></i>Save for later</div>
+        <div class="col-xs-auto"><i class="fa fa-times iconspace" aria-hidden="true"></i>Cancel changes</div>
+		<div class="col-xs-auto"><i class="fa fa-trash iconspace" aria-hidden="true"></i>Delete Order</div>
+    </div>
+    <div class="row margin20">
+        <div class="container">
+			<div class="row rmainheader">
+				<div class="col-xs-3"><span class="tag tag-pill tag-primary">1</span><span class="iconspace">Program</span></div>
+				<div class="col-xs-3"><span class="tag tag-pill tag-default">2</span><span class="iconspace">Stores</span></div>
+				<div class="col-xs-3"><span class="tag tag-pill tag-default">3</span><span class="iconspace">Products</span></div>
+				<div class="col-xs-3"><span class="tag tag-pill tag-default">4</span><span class="iconspace">OrderInfo</span></div>
+			</div>
+			<article class="row rmainheader">
+            <table class='table borderless'>
+                <thead>
+                    <tr>
+                        <th>Season</th>
+                        <th>Order Type</th>
+                        <th>Preparation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row ">
+                            <div class="form-group">
+                                <label class="radio-inline">
+                                    <input type="radio" name="options1" checked><span class="iconspace">Annual</span>
+                                </label>                                                       
+                            </div>
+                        </td>
+                        <td>
+                            <label class="radio-inline">
+                                <input type="radio" name="options2"><span class="iconspace">Growing Media</span>
+                            </label>  
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="col-xs-3">Prepared By</div>
+                                <div class="dropdown col-xs-auto">
+                                    <button type="button" class="btn btn-default dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+                                        Button dropdown <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>item1</li>
+                                        <li>item2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row ">
+                            <div class="form-group">
+                                <label class="radio-inline">
+                                    <input type="radio" name="options1"><span class="iconspace">Standard</span>
+                                </label>                                                       
+                            </div>
+                        </td>
+                        <td>
+                            <label class="radio-inline">
+                                <input type="radio" name="options2" checked><span class="iconspace">Mixing Warehouse</span>
+                            </label>  
+                        </td>
+                        <td>
+                            <div class="row">
+                            <div class="col-xs-3">Copy ASM</div>
+                                <div class="col-xs-auto" >
+                                    <input type="checkbox" value="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>			
+			</article>
+		</div>
+    </div>
+    <div class="row rmenu footer">
+        <div><a class="btn btn-primary pull-right" [routerLink]="['/savelater']">Next</a></div>
+    </div>
+</div>
